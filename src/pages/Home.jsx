@@ -28,6 +28,7 @@ function Home() {
             </div>
         )
     }
+
     return (
         <div className='w-full py-8'>
             <Container>
@@ -44,3 +45,7 @@ function Home() {
 }
 
 export default Home
+
+
+
+// all values are available in post by using spread in PostCard

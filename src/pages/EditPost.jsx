@@ -30,3 +30,6 @@ function EditPost() {
 }
 
 export default EditPost
+
+
+// to fetch value from url - we use useParams()
