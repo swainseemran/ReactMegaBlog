@@ -7,7 +7,15 @@ import store from "./store/store.js";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { AuthLayout, Login } from "./components/index.js";
 
-const router = createBrowserRouter({
+import Home from "./pages/Home.jsx";
+import AddPost from "./pages/AddPost.jsx";
+import Signup from "./pages/Signup.jsx";
+import EditPost from "./pages/EditPost.jsx";
+import Post from "./pages/Post.jsx";
+import AllPosts from "./pages/AllPosts.jsx"
+
+const router = createBrowserRouter([
+  {
   path: "/",
   element: <App />,
   children: [
@@ -63,7 +71,8 @@ const router = createBrowserRouter({
       element: <Post />,
     },
   ],
-});
+}]);
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Provider store={store}>
