@@ -7,10 +7,9 @@ const Input = React.forwardRef( function Input({
     ...props
 }, ref){
     const id = useId()
-    
     return (
         <div className='w-full'>
-            {/* if lable is true the next part is display */}
+        {/* if lable is true the next part is display */}
             {label && <label 
             className='inline-block mb-1 pl-1' 
             htmlFor={id}>

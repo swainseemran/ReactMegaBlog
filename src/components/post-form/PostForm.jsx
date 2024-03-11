@@ -122,7 +122,6 @@ export default function PostForm({ post }) {
 }
 
 
-
 // if(value && typeof value === 'string'){
 //     const slug = value.toLowercase().replace(/ /g, '_')
 //     setValue('slug', slug)
